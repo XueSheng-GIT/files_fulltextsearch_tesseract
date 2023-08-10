@@ -188,7 +188,7 @@ class TesseractService {
 
 		$ocr = new TesseractOCR($path);
 		$ocr->threadLimit($this->configService->getAppValue(ConfigService::TESSERACT_THREAD_LIMIT));
-		$timeout = explode(',', $this->configService->getAppValue(ConfigService::TESSERACT_TIMEOUT));
+		$timeout = $this->configService->getAppValue(ConfigService::TESSERACT_TIMEOUT);
 		$ocr->psm($this->configService->getAppValue(ConfigService::TESSERACT_PSM));
 		$lang = explode(',', $this->configService->getAppValue(ConfigService::TESSERACT_LANG));
 		call_user_func_array([$ocr, 'lang'], array_map('trim', $lang));
