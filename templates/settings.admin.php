@@ -66,6 +66,17 @@ Util::addScript(Application::APP_NAME, 'admin');
 
 		<div class="div-table-row tesseract_ocr_enabled">
 			<div class="div-table-col div-table-col-left">
+				<span class="leftcol">Timeout</span>
+				<br/>
+				<em>Sets a timeout in seconds for the Tesseract process. So that tesseract terminates before the database connection times out.</em>
+			</div>
+			<div class="div-table-col">
+				<input type="text" class="small" id="tesseract_timeout" value=""/>
+			</div>
+		</div>
+
+		<div class="div-table-row tesseract_ocr_enabled">
+			<div class="div-table-col div-table-col-left">
 				<span class="leftcol">Page Segmentation Method</span>
 				<br/>
 				<em><a href="https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality#page-segmentation-method">link
@@ -84,18 +95,6 @@ Util::addScript(Application::APP_NAME, 'admin');
 			</div>
 			<div class="div-table-col">
 				<input type="text" class="big" id="tesseract_lang" value=""/>
-			</div>
-		</div>
-
-		
-		<div class="div-table-row tesseract_ocr_enabled">
-			<div class="div-table-col div-table-col-left">
-				<span class="leftcol">Tesseract timeout</span>
-				<br/>
-				<em>Sets a timeout in seconds for the Tesseract process. So that tesseract terminates before the database connection times out.</em>
-			</div>
-			<div class="div-table-col">
-				<input type="text" class="small" id="tesseract_timeout" value=""/>
 			</div>
 		</div>
 		
