@@ -33,6 +33,7 @@ var fts_tesseract_elements = {
 	tesseract_div: null,
 	tesseract_ocr: null,
 	tesseract_thread_limit: null,
+	tesseract_timeout: null,
 	tesseract_psm: null,
 	tesseract_lang: null,
 	tesseract_pdf: null,
